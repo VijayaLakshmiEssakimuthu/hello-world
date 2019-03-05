@@ -1,0 +1,1876 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#"
+     xml:base="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18">
+        <License>Creative Commons
+Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/legalcode.</License>
+        <Definition>This ontology is about the different types of vitamins and minerals and their essential functions and deficiencies.</Definition>
+        <rdfs:label>Vitamins and Minerals</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Definition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#License -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#License"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Source -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vitamins"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vitamins"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vitamins"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vitamins"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vitamins"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vitamins"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AcidBaseBalanceNervoussystemFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AcidBaseBalanceNervoussystemFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Chloride"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The role of Chloride includes acid-base balance, conversion of food to energy,digestion, fluid balance and nervous system function.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Antioxidant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Antioxidant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Selenium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Selenium includes antioxidant formation, Immune function, Reproduction and thyroid function.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AntioxidantCollagenandConnectiveTissue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AntioxidantCollagenandConnectiveTissue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Copper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The function os Copper includes antioxidant, bone formation, collagen and connective tissue formation, energy production, iron metabolism and nervous system function.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AntioxidantCollagenandConnectiveTissueFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AntioxidantCollagenandConnectiveTissueFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminCAscorbicAcid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of VitaminC includes antioxidant,collagen and connective tissue formation, immune function and wound healing.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AntioxidantFormationofBloodVessels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AntioxidantFormationofBloodVessels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminE"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Berberi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Berberi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB1Thiamine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin B1 also known as Thiamin plays an important role in muscle contraction and conduction of nerve signals. Deficency of Thiamine might lead to a condition known as Berberi which causes weakness, nerve damage, fatigue and pyschosis.</Definition>
+        <Source>https://huel.com/pages/information-on-vitamin-and-minerals-in-huel-deficiencies-and-toxicity</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BirthDefectNeuralTubeDefects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BirthDefectNeuralTubeDefects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB9FolicAcid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Folic acid which is a fat soluble vitamin plays an important role in forming healthy red blood cells, and also helps in reducing the risk of spinal bifidia in unborn children during preganancy. It is essential to maintain a helathy amoun tof folic acid folate deficiency anemia, which causes tiredness (caused by anemia), weakness, diarrhea, loss of appetite and weight loss. A deficiency of folate can also cause headaches, heart palpitations, a sore tongue, and behavioral disorders.</Definition>
+        <Source>https://huel.com/pages/information-on-vitamin-and-minerals-in-huel-deficiencies-and-toxic</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BloodClottingandBoneandTeethFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BloodClottingandBoneandTeethFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Calcium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Calcium includes blood clotting,bone and teeth formation,constriction and relaxation of blood vessels,hormone secretion,muscle contraction and nervous sytem function.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BloodClottingandStrongBones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BloodClottingandStrongBones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminK"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The function of Vitamin K is to promote blood clotting and formation of strong bones</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BloodPressureRegulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BloodPressureRegulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Magenesium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The role of Magnesium is in blood pressure regulation, bone growth, calcium balance,hormone production, immune function and wound healing.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Calcium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Calcium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1000mcg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BloodClottingandBoneandTeethFormation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The function of calcium includes blood clotting,bone and teeth formation,constriction and relaxation of blood vessels, hormone secretion, muscle contarction and nervous system function. Calcium is found in almonds,rice, coconut and hep milks.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#CaliumBalance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#CaliumBalance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#CartilageandBoneFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#CartilageandBoneFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Managenese"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The role of Manganese in human body invloves Carbohydrate,	protein,and	
+cholesterol,metabolism Cartilage and bone	formation, Wound healing</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Chloride -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Chloride">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#3400mcg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AcidBaseBalanceNervoussystemFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Chloride includes acid-base balance, conversion of food to energy, digestion, fluid baalnce and nervous system function. The sources of this mineral are Celery, Lettuce, Olives, Rye, Salt substitute, seaweeds, table salt and sea salt.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Chromium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Chromium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#120mcg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#InsulinproteinCarbohydrateMetabolism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Chromium includes insulin function, protein, carbohydrate metabolism,and fat metabolism. The sources of this mineral are
+Broccoli, fruits, grapes and orange juice, meats, spicy, turkey and whole grains.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ConversionofFoodintoEnergy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ConversionofFoodintoEnergy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB12Cobalamin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of VitaminB12 includes conversion of food into energy,nervous system function and red blood cell formation</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ConversionofFoodtoEnergy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ConversionofFoodtoEnergy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB2Riboflavin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ConversionoffoodintoenergyCholestrolProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ConversionoffoodintoenergyCholestrolProduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB3Niacin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The role of Niancin is in Cholestrol production,conversion of food to energy, digestion and nervous system function.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Copper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Copper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#2mg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AntioxidantCollagenandConnectiveTissue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Copper includes Antioxidant	Bone formation, Collagen and onnective	tissue	formation, Energy production,Iron	metabolism,Nervous system function. The food sources of Calcium includes Chcolate and Coccao, Crustaceans and Shellfish.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood">
+        <Definition>The food and drug administration of U.S has listed the daily requirements of Vitamin intake in food.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Dementia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Dementia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminE"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin E plays an important role in antioxidant formation and its deficiency might lead to dementia, which is not a disease by itself but relates to a group of sympotms which relates with a person&apos;s ability to think, and mainly leads to Alzheimers.</Definition>
+        <Source>https://huel.com/pages/information-on-vitamin-and-minerals-in-huel-deficiencies-and-toxicity
+
+https://www.alz.org/alzheimers-dementia/what-is-dementia</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Dermatitis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Dermatitis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB6Pyridoxine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin B6 also known as pyridoxine has an important role in immune function, nervous system function, protein, carbohydrate metabolism and red blood cell formation. Isolated defeicency of Vitamin B6 is rare however combined deficiency of vitamin B6 alon giwth folic acid is found to dermatitis, mircocytic anemia, and weakened immune function.</Definition>
+        <Source>https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/
+
+https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#EnergyProductionRBCFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#EnergyProductionRBCFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Iron"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Iron includes energy production,growth and development,immune function,Red Blood Formation, reproduction and wound healing.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#EnergyStorageMetabolism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#EnergyStorageMetabolism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB7Biotin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Vitamin B3 Niancin includes energy storgae metabolism, digestion, cholestrol production and nervous system function.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#EnzymeProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#EnzymeProduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Molybdenum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The role of Molbdenum is in enzyme production.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#FatMetabolism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#FatMetabolism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB5PantothenicAcid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Pantothenic acid has an important function in conversion of food into energy,fata metabolism,hormone production,nervous systme function and red blood cell formation.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#FatSolubleVitamins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#FatSolubleVitamins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vitamins"/>
+        <Definition>Fat soluble vitamins can dissolve in fats and oils.Fat Soluble vitamins are essential in limited quantities for the body. Excess amount of consumption of fat soluble vitamin in the body could lead to toxic health effects.They are divided into Vitamin A,D,E,K. These vitamins are not necessarily important to be consumed daily. Body stores these vitamins in liver and adipose tissue when not used. Fat soluble vitamins are most abundant in high fatty foods and much better absorbed into the bloostream. Fat soluble vitamins are mainly derived from plants,animal foods and dietary supplements.</Definition>
+        <Source>https://extension.colostate.edu/topic-areas/nutrition-food-safety-health/fat-soluble-vitamins-a-d-e-and-k-9-315/
+https://www.healthlinkbc.ca/health-topics/ta3868</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#HairLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#HairLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB7Biotin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin B7 also known as Biotin is required in tiny amounts. Defieicncy of Biotin could lead to loss of hair.</Definition>
+        <Source>https://huel.com/pages/information-on-vitamin-and-minerals-in-huel-deficiencies-and-toxicity</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#HormoneActivation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#HormoneActivation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Phosphorus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The role of phosphorus involves acid base baalance, bone formation, energy production and storage and actibvation</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#InsulinproteinCarbohydrateMetabolism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#InsulinproteinCarbohydrateMetabolism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Chromium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The role of Chromium includes insulin function,protein, carbohydrate and fat metabolism.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Iodine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Iodine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#150mcg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ThyroidHormoneProduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Iodine includes growth	and	development, Metabolism, Reproduction and Thyroid	hormone	production. The sources of Iodine includes breads and cereal, diary products,iodized salt, potatotes, seaweed and turkey.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Iron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Iron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#18mcg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#EnergyProductionRBCFormation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of iron includes 	Energy	production growth and development, Immune	function, Red blood cell formation, Reproduction and Wound	healing.Beans	and	peas dark green	vegetables, Meats, Poultry Prunes and prune juice, Raisins, Seafood, Whole	grain,enriched,	and fortified, cereals	and bread.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Magenesium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Magenesium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#400mcg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BloodPressureRegulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Magnesium includes Blood	pressure regulation, Blood sugar	regulation, Bone formation, Energy	production,Hormone secretion,Immune	function, Muscle contraction, Nervous system	function,Normal	heart rhythm and Protein	formation. The food sources of Magnesium includes Avocados, Bananas, Beans and peas
+Dairy products,Green leafy vegetables (e.g.,	spinach),Nuts	and	pumpkin	seeds,Potatoes, Raisins, Wheat	bran and Whole	grains.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Managenese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Managenese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#CartilageandBoneFormation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Manganaese has the functions of Carbohydrate,	protein, and	
+cholesterol metabolism, Cartilage and bone	formation and Wound healing</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MegaloblasticAnemia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MegaloblasticAnemia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB12Cobalamin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin B12 has similar roles to Folate and helps in maintaning the red blood cells and nervvous ysstem healthy. Deficiency of Vitamin B12 is usually found in older people and causes extreme tiredness, lack of energy, pins and needles (paraesthesia), sore and red tongue, muscle weakness, depression, and problems with memory, understanding, and judgement.</Definition>
+        <Source>https://huel.com/pages/information-on-vitamin-and-minerals-in-huel-deficiencies-and-toxicity</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody">
+        <Definition>Minerals support a wide range of functions including bodily functions,ranging frm building and maintaing heavy bones to keeping muscles healthy.</Definition>
+        <Source>https://healthyeating.sfgate.com/main-functions-minerals-body-4171.html</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals">
+        <Definition>Minerals are nutrients required in very small qunatities for proper functioning of cells.</Definition>
+        <Source>https://healthyeating.sfgate.com/minerals-human-body-needs-5555.html</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Molybdenum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Molybdenum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#75mcg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#EnzymeProduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of molybdenum includes enzyme production. The foodsources of molbdenum includes beans and peas, nuts and whole grains.</Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MuscleContraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MuscleContraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Potassium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Potassium includes blood pressure regulation, carbohydrate metabolosim, fluid balance,growth and development, heart function, muscle contraction, nervous system function and protein formation</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Nervousystemfunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Nervousystemfunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB1Thiamine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The role of thiamin is in nervous system function and conversion of food into energy.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#NightBlindness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#NightBlindness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin A plays an important role in red blood formation and vision. Severe deficeincy of Vitamin A causes dry eyes and nyctalopia (night blindness)</Definition>
+        <Source>https://www.healthline.com/nutrition/vitamin-a-deficiency-symptoms#section3</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Pellagra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Pellagra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB3Niacin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Deficiency of Vitamin B3 leads to pellagara which is marked by dementia, dermatitis, and diarrhea. Untreated conditions of Pellagara is often fatal.</Definition>
+        <Source>https://www.healthline.com/health/pellagra</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Phosphorus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Phosphorus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#HormoneActivation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of phosphorus includes acid-base baalnce, bone formation, energy production and storage and hormone activation.The food sources of phosphorus includs Beans and	peas, Dairy	products, Meats, Nuts and seeds, Poultry, Seafood, Whole	grain,	enriched,and	fortified cereals and breads.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Potassium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Potassium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#3500mcg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MuscleContraction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of potassium includes Blood	pressure regulation, Carbohydrate	metabolism, Fluid balance, Growth and	development, Heart function, Muscle	contraction, Nervous	system	function, Protein	formation. The food sources of poattasium are Bananas ,Beet greens, juices	(e.g.,	carrot,	pomegranate,	prune,	
+orange,	and	tomato),Milk, Oranges and	orange juice, Potatoes	and sweet	potatoes, Prunes and prune juice,Spinach Tomatoes and tomato products ,White beans and Yogurt.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#PreventionofBirthDefects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#PreventionofBirthDefects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB9FolicAcid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Helps in prevention of birth defects, protein metabolism and formation of red blood cells.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ProteinCarbohydrateFatMetabolism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ProteinCarbohydrateFatMetabolism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB6Pyridoxine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The function of Biotin is in Protein carbohydrate and fat metabolism and energy storage.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#RarelyCausesDeficieny -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#RarelyCausesDeficieny">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB5PantothenicAcid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Pantothenic acid also known as Vitamin B5 is found in wide range of food sources such as Avocados,Beans	and peas, Broccoli, Eggs, Milk
+Mushrooms, Poultry, Seafood,Sweet potatoes,Whole grains and Yogurt. Deficincy of Vitamin B5 rarely occurs as it found in food in wide range of food sorces , however if deficiency occurs it can cause fatigue, chronic stress and depression.</Definition>
+        <Source>https://huel.com/pages/information-on-vitamin-and-minerals-in-huel-deficiencies-and-toxicity
+https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Rickets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Rickets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin D deficiency leads to rickets in children, and weakness, aches, pain in adults and osteoporosis in adults.</Definition>
+        <Source>https://huel.com/pages/information-on-vitamin-and-minerals-in-huel-deficiencies-and-toxicity</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Scurvy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Scurvy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminCAscorbicAcid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin C deficiency is relatively found to be rare in developed countries.Symptoms include fatigue, depression, and connective tissue defects (eg, gingivitis, petechiae, rash, internal bleeding, impaired wound healing). In infants and children, bone growth may be impaired. Diagnosis is usually clinical. Treatment consists of oral dosages of Vitamin C.</Definition>
+        <Source>https://www.merckmanuals.com/en-ca/professional/nutritional-disorders/vitamin-deficiency,-dependency,-and-toxicity/vitamin-c</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Selenium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Selenium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Minerals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#70mcg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Antioxidant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Selenium includes 	Antioxidant, Immune function, reproduction and thyroid	function. The food sources of Selenium includes Eggs, Enriched	pasta and rice, Meats,Nuts (e.g.,Brazil	nuts)and seeds, Poultry, Seafood and Whole grains.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#SoreThroat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#SoreThroat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB2Riboflavin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Riboflavin also kniwn as Vitamin B2 and deficiency causes cause a sore throat, cheilosis (lesions on the lips), angular stomatitis (lesions on the angles of the mouth), glossitis (fissured and magenta-coloured tongue), corneal vascularisation, dyssebacia (red, scaly, greasy patches on the nose, eyelids, scrotum, and labia), and normocytic, normochromic anaemia.</Definition>
+        <Source>https://huel.com/pages/information-on-vitamin-and-minerals-in-huel-deficiencies-and-toxicity</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ThyroidHormoneProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ThyroidHormoneProduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MineralFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#iscausedby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Iodine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Iodine plays an important role in growth and development, metabolism, reproduction and thyroid hormone production.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isaFunctionof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The functions of Vitamin A includes growth and development, immune function, reproduction, red blood cell formation, skin and bone formation and vision.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#FatSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#5,000IU"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#NightBlindness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin A also called as retinol helps the eyes to adjust to light changes. It plays an important role in bone growth and development, reproduction, cell division,gene expression and regulation of immunesystem. The eyes, skin,mucous mebrane of mouth, nose,throat and lungs depends on Vitamin A.Food sources of Vitamin A are carrots, diary products, fish, liver, green leafy vegetables. Some fruits contain Beta Carotene which the body converts into Vitamin A. Deficienyc of Vitamin A leads to xeropthalmia due to malnutrition, night blindness, very dry skin, dceresed resistance to infection, faulty tooth and slower bone growth.</Definition>
+        <Source>https://extension.colostate.edu/topic-areas/nutrition-food-safety-health/fat-soluble-vitamins-a-d-e-and-k-9-315/</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB12Cobalamin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB12Cobalamin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#WaterSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#6mg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ConversionofFoodintoEnergy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#MegaloblasticAnemia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin B12 contains metallic element coablt and hence the name cobalamin. Vitamin B12 acts as coenzyme. Adequate intake is essential for brain function and development, neurological function and production of red blood cells. Vitamin B12 is found only in animal food and which includes meat, diary products, seafood and eggs.Deficieny of Vitamin B12 includes anemia and impaired neurological symptoms.</Definition>
+        <Source>https://www.healthline.com/nutrition/water-soluble-vitamins#b12
+https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB1Thiamine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB1Thiamine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#WaterSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1.5mg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Nervousystemfunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Berberi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Thiamine is a Water Soluble Vitamin and serves as a co-enzyme in the body.Co-enzymes tigger the rate at which chemicla reactions occur. Dietary sources of thiamine includes nuts, seeds, whole grains, liver and pork.People with Type I and Type II diabetes are likely to have thiamine deficieny. Seroius disease associated with thiamine defeiciency includes Beri-Beri, Wernicke-Korsakoff syndrome. The symptoms of these disorders anorexia, weight loss, impaired neural function, mental problems, muscle weakness, and heart enlargement.</Definition>
+        <Source>https://www.healthline.com/nutrition/water-soluble-vitamins#b1.</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB2Riboflavin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB2Riboflavin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#WaterSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1.7mg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ConversionofFoodtoEnergy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#SoreThroat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Ribloflavin is the only water soluble vitamin used in food coloring. It acts as coenzyme and helps in the conversion of food energy, helps in growth and development and red blood cell formation.Riboflavin is food in eggs, enriched grain products, meat, milk, poultry and sea foods and spinach.Deficiency of riboflavin has been to be rare in developed countries. Severe deficieny of riboflavin results in a condition known as arbiflavinosis, charatcerised by sore throat, inflamed tongue, anemia and skin and eye problems.</Definition>
+        <Source>https://www.healthline.com/nutrition/water-soluble-vitamins#b2
+https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB3Niacin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB3Niacin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#WaterSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#20mg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#EnergyStorageMetabolism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Pellagra"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Niancin belongs to water soluble vitamins and is the only vitamin in the body that could also be produced from another nutrient amino acid tryptophan. It consists of two related compounds niacinamide and nicotinic acid. All dietary forms of niacin are converted to NAD+ which acts as coenzymes. Niacin is found in the followuing food sources fish, chicken, eggs, dairy products and mushrooms.Defiecny of Niancin leadds to pellagra.</Definition>
+        <Source>https://www.healthline.com/nutrition/water-soluble-vitamins#b5</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB5PantothenicAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB5PantothenicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#WaterSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#10mg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isCausedByDeficieny"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#RarelyCausesDeficieny"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#FatMetabolism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Pantothenic acid also known as Vitamin B5 is a water soluble vitamin. This vitamin plays an importnat role in the formatrion of coenzymeA which is necessary for synthesis of fatty acids,amino acids,steroid harmones, neurotransmitters and other various important compounds.Pantothenic acid is found in Avocados,Beans, Peas, Broccoli, eggs, milk, mushrooms,poultry, seafood and spinach.
+Pantothenic acid is found in many food sources, therefore its deficiency is relatively rare.</Definition>
+        <Source>https://www.healthline.com/nutrition/water-soluble-vitamins#b5</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB6Pyridoxine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB6Pyridoxine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#WaterSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BloodPressureRegulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#ProteinCarbohydrateFatMetabolism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Dermatitis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin B6 is a water soluble vitamin which palys an important role in the formation of pyridoxine a cozyme essentially invloved in various metabolic pathways.Vitamin B6 is found in chickpeas, fruits, potatoes, salmon and tuna. Deficieny of Vitamin B6 is rare although high amounts of alacohol consumption might increase the risk of Vitamin B6 defeciency.</Definition>
+        <Source>https://www.healthline.com/nutrition/water-soluble-vitamins#b7
+https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB7Biotin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB7Biotin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#WaterSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#300mcg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#EnergyStorageMetabolism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#HairLoss"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Biotin (Vitamin B5) is a water soluble vitamin and functions as coenzyme. Biotin plays an important role in fatty acid synthesis,glucose formation and amino acid metabolism.Food sources rich in biotin include organ meats, fish,egg yolk and diary products. Deficiency of Biotin is relatively uncommon.</Definition>
+        <Source>https://www.healthline.com/nutrition/water-soluble-vitamins#b7</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB9FolicAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB9FolicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#WaterSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#PreventionofBirthDefects"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BirthDefectNeuralTubeDefects"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin B9 is also known as Folic acid. Vitamin B9 acts as coenzyme and is essential for cell growth, DNA formation and amino acid metabolism. It is essentially important during cell division, growth and in pregnancy and infancy. It is also important in the formation of red and white blood cells and defeiciency leads to anemia.Folic acid is found in asparagus,avacado, beans, enriched grain products, green leafy vegetables and orange juice.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf
+https://www.healthline.com/nutrition/water-soluble-vitamins#b9</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminCAscorbicAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminCAscorbicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#WaterSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#60mg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AntioxidantCollagenandConnectiveTissueFormation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Scurvy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin C is a water soluble vitamin and does not fall into the category of vitamin B. It plays an important role in collagen synthesis. Vitamin C plays an important role in Vitamin antioxidant defenses, collagen formation and immune function.Vitamin C is most commonly found in fruits and vegetables.Deficiency of Vitamin C results in scurvy which involves btreakdown of connective tissues.</Definition>
+        <Source>https://www.healthline.com/nutrition/water-soluble-vitamins#c</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#FatSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#400IU"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#CaliumBalance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Rickets"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin D belongs to Fat soluble vitamin group and plays an important role in the formation of bones. Vitamin D increases the absorption of calcium from small intestine. Children need Vitamin D to develop healthy bones and teeth. The primary sources of Vitamin D are milk, diary products, oily fish and addtionally vitamin D is formed by our skin on exposure to sunlight. The deficiency of Vitamin D leads to rickets in growing childre, osteomalacia(muscle and bone weakness) and osteoporisis(loss of bone mass) in adults.</Definition>
+        <Source>https://extension.colostate.edu/topic-areas/nutrition-food-safety-health/fat-soluble-vitamins-a-d-e-and-k-9-315/</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminDefiencies">
+        <Definition>A balanced diet with the required amount of nutrients is essential for maintaining a healthy lifestyle. Deficiency of Vitamins can often manifest itself in a wide variety of diseases.</Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#FatSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#30IU"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AntioxidantFormationofBloodVessels"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Dementia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin E acts as an antioxidant and protects cell walls. Vitamin E is found in polyunsaturated plant oils (soybean, corn,saffflower,cottonseed, whole grain products, liver, egg yolk, nuts and seeds.Studies have reavelaed a link between eating anitoxiant rich food which lowers the risk of heart disease, cancer and several otehr diseases. Deficieny of Vitamin E is rare and is found to occur only in premature infants unable to absord fats.</Definition>
+        <Source>https://extension.colostate.edu/topic-areas/nutrition-food-safety-health/fat-soluble-vitamins-a-d-e-and-k-9-315/</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminFunctionsinHumanBody">
+        <Definition>Vitamins have been classified into water soluble and fat soluble vitamins. These nutrient are required in limited quantities in evry day diet and plays improtant functions in the body such a energy storage, bone formation, fat, carbohydrate metabolism and several other importnat functions.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#FatSolubleVitamins"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#hasDailyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#80mcg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BloodClottingandStrongBones"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#vitamindeficiencycauses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#RarelyCausesDeficieny"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>Vitamin K is produced naturally by the bacteria in the intestine and plays an essential role in blood clotting, bone health and help to produce proteins for bones, blood and kidneys. The food sources of Vitamin K green leafy vegetables,certian vegetable oils, spinach, cauliflower and cabbage. Defieciency of Vitamin K might lead to haemorrhaging. Consuption of antibiotics might lead to Vitamin K defeciency temporrairly as the gut bacteria would be killed. Vitamin K defiency might occur in infants or people who take anticoagulants. Newborn babies lack Vitamin K and require supplement for first week.</Definition>
+        <Source>https://extension.colostate.edu/topic-areas/nutrition-food-safety-health/fat-soluble-vitamins-a-d-e-and-k-9-315/</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vitamins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vitamins">
+        <rdfs:comment>Description
+ &quot;Vitamins are essential micronutrients required by the body to grow and develop normally. There are thirteen vitamins essential for our body. Each vitamin has a different function in the body and the best way to get enough vitamins in the body is to have a balanced diet. Vitamins are classified into fat soluble and water soluble vitamins. Vitamins could be supplemented to the human body through daily consuption of diet from natural food sources. Deficieny of vitamins leads to serious health problems.
+
+
+Source: https://medlineplus.gov/vitamins.html&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#WaterSolubleVitamins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#WaterSolubleVitamins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Vitamins"/>
+        <Definition>Water soluble vitamins are easily dissolved in water and ready for uptake by the tissues.The water soluble vitamins includes vitamin B complex and vitamin C group. There are eight classes of water soluble vitamins.These vitamins are not stored in the body and needs to be regularly replinished in the body. Excess amounts of water soluble vitamins are readily excreted in the urine and in some cases excess amount of consumption of Vitamin C leades to diarrhea.Eight of the water soluble vitamins falls under Vitamin B complex, they are Vitamin B1 (Thiamine), Vitamin B2(Ribloflavin), Vitamin B3(Niacin), Vitamin B6 (Pyridoxine,Folate and Folic acid, Vitamin B12 and Biotin and Pantothenic acid. Vitamin B complexes function as coenzyme and help obtain energy from food. They are also important for normal appetite, healthy skin, nervous system and red blood cell formation.</Definition>
+        <Source>https://extension.colostate.edu/topic-areas/nutrition-food-safety-health/water-soluble-vitamins-b-complex-and-vitamin-c-9-312/</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1.5mg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1.5mg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB1Thiamine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The daily consumption of thiamine must be 1.5mcg.</Definition>
+        <Source>https://www.fda.gov/Food/LabelingNutrition/ucm20026097.htm</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1.7mg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1.7mg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB2Riboflavin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The daily consumption of Ribloflavin should be 1.7mg</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#10mg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#10mg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB5PantothenicAcid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The daily requirement of VitaminB5 is 10mg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1000mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1000mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Calcium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of Calcium to be consumed daily is 1000mcg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#120mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#120mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Chromium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of Chromium to be consumed daily is 120mcg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#150mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#150mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Iodine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of Iodine present in daily food is 150mcg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#18mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#18mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Iron"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The daily requirement of Iron would be 18mcg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#2mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#2mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Copper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of Copper to eat daily is 2mcg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#2mg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#2mg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Copper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of Copper to be consumed daily is 2mg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#20mg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#20mg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB3Niacin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The daily consumption of Niacin is 20mg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#30IU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#30IU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminE"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of VitaminE present in daily food is 30IU.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#300mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#300mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB7Biotin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of Biotin to be taken in daily food is 300mcg</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#3400mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#3400mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Chloride"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of Chloride to be consumed daily is 3400mcg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#3500mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#3500mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Potassium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of Potassium to be consumed daily is 3500 mcg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#400IU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#400IU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of VitaminD to be consumed on a daily basis is 400IU.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#400mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#400mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Magenesium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amoount of Magnesium to be consumed on a daily basis is 400mg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#5,000IU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#5,000IU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The daily requirements for VitaminA is 5000IU.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#6mg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#6mg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB12Cobalamin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of VitaminB12 to be consumed daily is 6mg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#60mg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#60mg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminCAscorbicAcid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The daily consumption of VitaminC should be 60mg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#70mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#70mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Selenium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of Selenium to be consumed daily is 70mcg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#75mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#75mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Molybdenum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of Molybdenum to be consumed in daily food is 75mcg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#80mcg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#80mcg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#DailyValueRequiredInFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#isRequiredamountof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminK"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <Definition>The amount of VitaminK present in daily food is 80mcg.</Definition>
+        <Source>https://www.accessdata.fda.gov/scripts/interactivenutritionfactslabel/factsheets/vitamin_and_mineral_chart.pdf</Source>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#AcidBaseBalanceNervoussystemFunction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#BloodClottingandBoneandTeethFormation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#InsulinproteinCarbohydrateMetabolism"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Calcium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Chloride"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Chromium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Copper"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Iodine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Iron"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Magenesium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Managenese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Molybdenum"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Phosphorus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Potassium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#Selenium"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminK"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB12Cobalamin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB1Thiamine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB2Riboflavin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB3Niacin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB5PantothenicAcid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB6Pyridoxine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB7Biotin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminB9FolicAcid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#VitaminCAscorbicAcid"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1.5mg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1.7mg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#10mg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#1000mcg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#120mcg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#150mcg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#18mcg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#2mcg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#2mg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#20mg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#30IU"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#300mcg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#3400mcg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#3500mcg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#400IU"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#400mcg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#5,000IU"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#6mg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#60mg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#70mcg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#75mcg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vijay/ontologies/2019/2/VitaminsandMinerals-ontology-18#80mcg"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
